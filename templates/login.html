@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+    <div class="login-body">    
+        <h2 id="login-text">Login</h2>
+
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <p style="color:red;">{{ messages[0] }}</p>
+            {% endif %}
+        {% endwith %}
+
+        <form method="POST">
+            <input type="text" name="nome" placeholder="Nome" id="input-nome"><br><br>
+            <input type="password" name="senha" placeholder="Senha" id="input-senha"><br><br>
+            <button type="submit">Entrar</button>
+        </form>
+
+        <a href="/cadastro">Cadastrar</a>
+    </div>
+</body>
+</html>

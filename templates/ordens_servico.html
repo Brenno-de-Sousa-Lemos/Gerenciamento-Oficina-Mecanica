@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ordens</title>
+</head>
+<body>
+
+<h2>Ordens de Serviço</h2>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Cliente</th>
+        <th>Descrição</th>
+    </tr>
+
+    {% for o in ordens %}
+    <tr>
+        <td>{{ o.id }}</td>
+        <td>{{ o.cliente }}</td>
+        <td>{{ o.descricao }}</td>
+    </tr>
+    {% endfor %}
+</table>
+<a href="/criar_ordem_nova">
+    <button>Cadastrar Nova Ordem</button>
+</a>
+
+</body>
+</html>

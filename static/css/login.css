@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(65, 65, 189);
+}
+
+.login-body {
+    background-color: blue;
+}
+
+.login-body #login-text {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#input-nome {
+    border-radius: 8px;
+}
+
+#input-senha {
+    border-radius: 8px;
+}
