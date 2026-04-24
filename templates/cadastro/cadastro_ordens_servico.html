@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Ordem</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/criar_ordem.css') }}">
+</head>
+<body>
+
+<h2 id="text-criar-ordem">Criar Ordem de Serviço</h2>
+
+{% with messages = get_flashed_messages(with_categories=true) %}
+    {% for categoria, mensagem in messages %}
+
+        {% if categoria == "erro_cliente" %}
+            <p style="color: red;" id="flash-message">{{ mensagem }}</p>
+
+        {% elif categoria == "erro_descricao" %}
+            <p style="color: red;" id="flash-message">{{ mensagem }}</p>
+
+        {% endif %}
+
+    {% endfor %}
+{% endwith %}
+
+<form method="POST" class="form-cadastro-ordem-servico">
+    <input type="text" name="cliente" placeholder="Nome do cliente" id="text-input-cliente"><br><br>
+
+    <textarea name="descricao" placeholder="Descreva o problema"></textarea><br><br>
+
+    <button type="submit">Cadastrar</button>
+</form>
+
+<script>
+    setTimeout(function() {
+        let msg = document.getElementById("flash-message");
+        if (msg) {
+            msg.style.display = "none";
+        }
+    }, 3000); // 3000ms = 3 segundos
+</script>
+</body>
+</html>

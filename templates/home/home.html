@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+<html>
+<head>
+    <title>Home</title>
+</head>
+<body>
+    <h1 id="text-bem-vindo">Oficina Seu José</h1>
+    <div class="main-buttons">
+        <a href="/criar_ordem_nova" class="link-1">
+            <button id="button-cadastro-ordem">
+                Cadastrar Ordens de Serviço
+            </button>
+        </a>    
+        <a href="/ordens_servico" class="link-2">
+            <button id="button-ordens-servico">
+                Visualizar Ordens Existentes
+            </button>
+        </a>
+    </div>    
+</body>
+</html>

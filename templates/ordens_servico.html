@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordens</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/ordens.css') }}">
+</head>
+<body>
+
+<h2 id="text-ordens">Ordens de Serviço</h2>
+<a href="/criar_ordem_nova" class="link-criar-nova-ordem">
+    <button id="button-cadastrar-nova-ordem">Cadastrar Nova Ordem</button>
+</a>
+<table class="info-cliente">
+    <tr id="info-ordens">
+        <th id="text-id">ID</th>
+        <th id="text-cliente">Cliente</th>
+        <th id="text-descricao">Descrição do Problema</th>
+    </tr>
+    {% for ordem in ordens %}
+    <tr id="table-cliente">
+        <td id="tab-id">{{ ordem.id }}</td>
+        <td id="tab-cliente">{{ ordem.cliente }}</td>
+        <td id="tab-descricao">{{ ordem.descricao }}</td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>

@@ -1,0 +1,67 @@
+body {
+    background-color: rgb(55, 77, 118);
+}
+
+input {
+    font-size: 30px;
+}
+
+.login-body {
+    background-color: rgb(88, 122, 185);
+    border-radius: 15px;
+    margin-left: 370px;
+    margin-right: 370px;
+    margin-top: 100px;
+    padding-top: 10px;
+}
+
+.form-body {
+    text-align: center;
+}
+
+#login-text {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 140px;
+    margin-right: 140px;
+    border-radius: 15px;
+    background-color: rgb(40, 110, 241);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+#input-nome {
+    border-radius: 8px;
+    height: 40px;
+    width: 250px;
+}
+
+#input-senha {
+    border-radius: 8px;
+    height: 40px;
+    width: 250px;
+}
+
+#button-entrar {
+    cursor: pointer;
+    background-color: rgb(26, 87, 199);
+    font-size: 30px;
+    margin-top: 10px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    height: 80px;
+    width: 200px;
+    border-radius: 15px;
+    border-style: hidden;
+    transition: 0.2s;
+    color: white;
+}
+
+#button-entrar:hover {
+    background-color: rgb(55, 120, 240);
+    transform: scale(1.03);
+    font-size: 31px;
+}

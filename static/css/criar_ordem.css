@@ -1,0 +1,45 @@
+input {
+    font-size: 30px;
+}
+
+#text-criar-ordem {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: rgb(40, 110, 241);
+    background-attachment: fixed;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+}
+
+.form-cadastro-ordem-servico {
+    display: block;
+    text-align: center;
+    background-color: blue;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+#text-input-cliente {
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    height: 70px;
+    width: 300px;
+    transition: 0.1s;
+}
+
+#text-input-cliente:focus {
+    border-width: 5px;
+    transition: 0.1s;
+}
+
+#text-input-cliente::placeholder {
+    font-size: 30px;
+    text-align: center;
+}

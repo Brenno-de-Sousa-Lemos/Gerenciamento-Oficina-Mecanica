@@ -1,0 +1,113 @@
+body {
+    background-color:rgb(55, 77, 118);
+}
+
+#text-ordens {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: rgb(40, 110, 241);
+    background-attachment: fixed;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+}
+
+.info-cliente {
+    border-spacing: 10px;
+    font-size: 26px;
+    border-radius: 15px;
+    background-color: rgb(40, 110, 241);
+    text-align: center;
+    margin-left: 280px;
+    width: 700px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.info-cliente #text-id {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(23, 84, 198);
+    color: white;
+    border-radius: 10px;
+    font-size: 30px;
+    margin-right: 100px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.info-cliente #text-cliente {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(23, 84, 198);
+    color: white;
+    border-radius: 10px;
+    font-size: 30px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.info-cliente #text-descricao {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(23, 84, 198);
+    color: white;
+    border-radius: 10px;
+    font-size: 30px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#tab-id {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 10px;
+    font-size: 30px;
+    align-items: center;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#tab-cliente {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#tab-descricao {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#button-cadastrar-nova-ordem {
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(26, 87, 199);
+    height: 60px;
+    width: 250px;
+    margin-bottom: 10px;
+    margin-left: 510px;
+    margin-right: 510px;
+    border-radius: 15px;
+    border-style: hidden;
+    transition: 0.2s;
+    color: white;
+}
+
+#button-cadastrar-nova-ordem:hover {
+    background-color: rgb(55, 120, 240);
+    transform: scale(1.03);
+    font-size: 21px;
+}
