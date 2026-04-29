@@ -84,11 +84,15 @@ def login():
         nome = request.form["nome"]
         senha = request.form["senha"]
 
-        if not nome or not senha:
+        if not nome:
             flash("Preencha todos os campos!")
             return redirect("/login")
-
-        senha_criptografada = criptografar_senha(senha)
+        
+        if not senha:
+            flash("Preencha todos os campos!")
+            return redirect("/login")
+        if nome and senha:
+            senha_criptografada = criptografar_senha(senha)
 
         conn = get_connection()
         cursor = conn.cursor()

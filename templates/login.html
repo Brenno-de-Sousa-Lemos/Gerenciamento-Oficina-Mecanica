@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
 </head>
 <body>
     <div class="login-body">    
@@ -12,7 +12,7 @@
 
         {% with messages = get_flashed_messages() %}
             {% if messages %}
-                <p style="color:red;">{{ messages[0] }}</p>
+                <p style="color:red;" id="flash-message-login">{{ messages[0] }}</p>
             {% endif %}
         {% endwith %}
 
@@ -22,7 +22,18 @@
             <button type="submit" id="button-entrar">Entrar</button>
         </form>
 
-        <a href="/cadastro">Cadastrar</a>
+        <a href="/cadastro" id="button-cadastrar-usuario-novo">
+            Cadastrar
+        </a>
     </div>
+
+    <script>
+    setTimeout(function() {
+        let msg = document.getElementById("flash-message-login");
+        if (msg) {
+            msg.style.display = "none";
+        }
+    }, 3000);
+</script>
 </body>
 </html>

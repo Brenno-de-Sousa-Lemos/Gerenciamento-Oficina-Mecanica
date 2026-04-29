@@ -6,6 +6,16 @@ input {
     font-size: 30px;
 }
 
+#flash-message-login {
+    background-color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    border-radius: 15px;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
 .login-body {
     background-color: rgb(88, 122, 185);
     border-radius: 15px;
